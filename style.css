@@ -1,13 +1,14 @@
-/* Configuración general */
+/* CONFIGURACIÓN GENERAL */
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #101510;
+    background-color: #0d150f;
     color: white;
 }
 
-/* Encabezado */
+
+/* ENCABEZADO */
 
 header {
     background-color: #286b32;
@@ -17,19 +18,22 @@ header {
 
 header h1 {
     font-size: 45px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 
 header p {
     font-size: 18px;
 }
 
-/* Menú */
+
+/* MENÚ */
 
 nav {
     background-color: #181818;
-    padding: 18px;
+    padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -43,16 +47,17 @@ nav a:hover {
     color: #62d26f;
 }
 
-/* Contenido */
+
+/* CONTENIDO */
 
 main {
     max-width: 1000px;
     margin: auto;
-    padding: 30px;
+    padding: 40px 25px;
 }
 
 section {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 h2 {
@@ -60,17 +65,23 @@ h2 {
     font-size: 30px;
 }
 
-/* Imagen */
+p {
+    line-height: 1.6;
+}
 
-img {
+
+/* IMAGEN PRINCIPAL */
+
+.imagen-principal {
     width: 100%;
-    max-height: 400px;
+    max-height: 450px;
     object-fit: cover;
     border-radius: 15px;
     margin-top: 20px;
 }
 
-/* Tarjetas */
+
+/* TARJETAS DE BIOMAS */
 
 .tarjetas {
     display: flex;
@@ -83,20 +94,28 @@ article {
     border-radius: 12px;
     flex: 1;
     border: 2px solid #286b32;
+    transition: 0.3s;
 }
 
 article:hover {
     transform: scale(1.05);
+    border-color: #62d26f;
 }
 
-/* Listas */
+article h3 {
+    font-size: 22px;
+}
+
+
+/* LISTAS */
 
 li {
-    margin: 10px;
+    margin: 12px;
     font-size: 18px;
 }
 
-/* Botón */
+
+/* BOTÓN MINECRAFT */
 
 button {
     background-color: #3c9b4b;
@@ -106,6 +125,7 @@ button {
     font-size: 17px;
     border-radius: 8px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 button:hover {
@@ -113,10 +133,79 @@ button:hover {
     color: black;
 }
 
-/* Pie de página */
+
+/* SECCIÓN TWITCH */
+
+#twitch {
+    text-align: center;
+    background-color: #18121f;
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #9146ff;
+}
+
+#twitch h2 {
+    color: #b98cff;
+}
+
+#twitch p {
+    font-size: 19px;
+}
+
+
+/* IMAGEN TWITCH */
+
+.twitch-img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 20px 0 25px 0;
+}
+
+
+/* BOTÓN TWITCH */
+
+.twitch-boton {
+    display: inline-block;
+    background-color: #9146ff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.twitch-boton:hover {
+    background-color: #772ce8;
+    transform: scale(1.05);
+}
+
+
+/* PIE DE PÁGINA */
 
 footer {
     background-color: #181818;
     text-align: center;
     padding: 25px;
+    margin-top: 30px;
+}
+
+
+/* PARA CELULARES */
+
+@media (max-width: 700px) {
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
 }
