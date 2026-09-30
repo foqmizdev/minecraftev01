@@ -1,1 +1,122 @@
+/* Configuración general */
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #101510;
+    color: white;
+}
+
+/* Encabezado */
+
+header {
+    background-color: #286b32;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Menú */
+
+nav {
+    background-color: #181818;
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #62d26f;
+}
+
+/* Contenido */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    color: #62d26f;
+    font-size: 30px;
+}
+
+/* Imagen */
+
+img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* Tarjetas */
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+}
+
+article {
+    background-color: #1d271e;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    border: 2px solid #286b32;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+/* Listas */
+
+li {
+    margin: 10px;
+    font-size: 18px;
+}
+
+/* Botón */
+
+button {
+    background-color: #3c9b4b;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #62d26f;
+    color: black;
+}
+
+/* Pie de página */
+
+footer {
+    background-color: #181818;
+    text-align: center;
+    padding: 25px;
+}
